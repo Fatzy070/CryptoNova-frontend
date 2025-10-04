@@ -123,6 +123,7 @@ const Login = () => {
               <GoogleLogin
                 onSuccess={handleGoogleLogin}
                 onError={() => console.log("Google login failed")}
+                className="w-full flex justify-center"
               />
             </div>
           
