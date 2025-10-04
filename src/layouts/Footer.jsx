@@ -1,7 +1,7 @@
 import React from 'react';
 import Info from '../data/Info';
 import { NavLink } from 'react-router-dom';
-import Nova from '../assets/nova.png';
+import Nova from '../assets/Nova.png';
 
 const Footer = () => {
     const { nova , nav3 , copy , text  , link , follow , contact} = Info;

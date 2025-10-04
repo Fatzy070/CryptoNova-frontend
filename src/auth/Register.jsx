@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { GoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
-import Nova from "../assets/nova.png";
+import Nova from "../assets/Nova.png";
 import Background from "../assets/bit.jpg";
 
 const Register = () => {

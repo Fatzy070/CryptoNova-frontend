@@ -3,7 +3,7 @@ import axios from "axios";
 import { GoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
 import Background from "../assets/bit.jpg";
-import Nova from "../assets/nova.png";
+import Nova from "../assets/Nova.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
