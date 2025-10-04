@@ -34,7 +34,7 @@ const Dashboard = () => {
   if (!profile) return <p className="text-center text-red-400 py-60">No profile found. Please login.</p>;
 
   return (
-    <div className="pt-20 px-3 md:px-6">
+    <div className="pt-25 px-3 md:px-6">
       <div className=" text-white border w-[300px] items-center  rounded-[10px] px-3 py-6.5  bg-gradient-to-br from-gray-900 via-gray-800 to-black flex gap-3
       ">
     <div>
