@@ -62,7 +62,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive
                     ? 'capitalize px-3 py-1 rounded-md bg-white/10 transition-all'
-                    : 'capitalize px-3 py-1 hover:text-cyan-400 transition-all'
+                    : 'capitalize px-2 md:px-3 py-1 hover:text-cyan-400 transition-all'
                 }
               >
                 {item.name}
