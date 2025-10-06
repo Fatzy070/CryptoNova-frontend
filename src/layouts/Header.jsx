@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Info from '../data/Info';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import { LuLogOut } from "react-icons/lu";
+
+
 const Header = () => {
   const { nova, nav, nav2 } = Info;
   const [loggedIn, setLoggedIn] = useState(false);
@@ -32,7 +35,7 @@ const Header = () => {
   const links = loggedIn ? nav2 : nav;
 
   return (
-    <header className='  w-full px-4 md:px-15 py-4.5   bg-gradient-to-r from-[#1F1F1F] via-[#2C2C2C] to-[#3B2F2F] text-gray-300'>
+    <header className='  w-full px-4 md:px-10 py-4.5   bg-gradient-to-r from-[#1F1F1F] via-[#2C2C2C] to-[#3B2F2F] text-gray-300'>
       <section className='flex justify-between items-center'>
         <div className='flex items-center'>
           <img src={logo} alt="CryptoNova Logo" className='w-[40px] h-[40px] inline-block mr-2' />
@@ -41,16 +44,16 @@ const Header = () => {
         </div>
         </div>
 
-        <div className='flex md:gap-3'>
+        <div className='flex md:gap-1'>
           {links.map((item, index) => {
             if (item.name === 'logout') {
               return (
                 <button
                   key={index}
                   onClick={handleLogout}
-                  className='capitalize px-3 py-1 rounded-md bg-red-500 text-white font-semibold hover:bg-red-600 transition-all'
+                  className='capitalize px-1.5 md:px-3 py-1 rounded-md bg-red-500 text-white  font-bold hover:bg-red-600 transition-all'
                 >
-                  {item.name}
+                 <LuLogOut size={23} />
                 </button>
               );
             }
@@ -61,8 +64,8 @@ const Header = () => {
                 to={item.link}
                 className={({ isActive }) =>
                   isActive
-                    ? 'capitalize px-3 py-1 rounded-md bg-white/10 transition-all'
-                    : 'capitalize px-2 md:px-3 py-1 hover:text-cyan-400 transition-all'
+                    ? 'capitalize px-2 py-1 rounded-md bg-white/10 transition-all'
+                    : 'capitalize px-2  py-1 hover:text-cyan-400 transition-all'
                 }
               >
                 {item.name}
